@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Digital Book - librairie en ligne</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/livre.css" />
+
+</head>
+
+<body>
+    <div id="app">
+
+        <h1><b><i>DigitalBook - librairie en ligne</i></b></h1>
+        <!--router-->
+        <nav class="navbar navbar-expand-md navbar-bg sticky-top fed-nav d-flex">
+            <a class=" navbar-brand" href="#">
+                <router-link to="/"><img src="assets/logo4.jpg" width="120" height="55">
+                    </img>
+                </router-link>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link ">
+                            <img src="assets/logo/contact4.png" height="50px">
+                            <router-link to="/contact"><b>Contact</b></router-link>
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link ">
+                            <img src="assets/logo/shop2.png" height="50px" width="120px">
+                            <router-link to="/boutique"><b>Boutique</b></router-link>
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link ">
+                            <img src="assets/logo/goldenbook.jpg" height="50px" width="115px">
+                            <router-link to="/goldbook"><b>Livre d'or</b></router-link>
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link ">
+                            <img src="assets/logo/ocassion2.png" height="50px" width="75px">
+                            <router-link to="/livre-seconde-vie"><b>Livre d'occasion</b></router-link>
+                        </a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div>
+            <router-view>
+            </router-view>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                    <footer>
+                        <p>©2020 Lex-Fed-Ced</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>

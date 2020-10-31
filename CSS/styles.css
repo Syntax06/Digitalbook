@@ -1,0 +1,211 @@
+    .fed-car {
+        border: 10px;
+        margin-top: 30px;
+        border-radius: 55px;
+        margin-bottom: 30px;
+
+    }
+
+    .fed-nav {
+        background-color: rgb(255, 255, 255);
+        border-radius: 35px;
+    }
+
+    h1 {
+        color: rgb(255, 255, 255);
+     
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+        font-family: fantasy;
+        font-style: oblique;
+    }
+span{
+    color:black;
+}
+
+
+    body {
+        background-image: url(../assets/fond/Beautiful_Books_1.jpeg);
+        background-size: 100%;
+        background-position: center;
+        background-attachment: fixed, scroll;
+        font-size: 20px;
+    }
+
+    h5 {
+        color: rgb(230, 135, 10);
+        font-family: fantasy;
+        font-style: oblique;
+    }
+
+    h3 {
+        color: rgb(231, 155, 2);
+        text-align: center;
+        font-family: fantasy;
+        font-style: oblique;
+    }
+
+    h6 {
+        color: black;
+        font-family: fantasy;
+        font-style: oblique;
+        text-decoration: underline;
+    }
+
+    p {
+        color: rgb(255, 255, 255);
+        font-family: fantasy;
+ 
+
+
+    }
+
+    .lex-col {
+        color: rgb(230, 159, 27);
+    }
+
+    .lex-contact {
+        color: rgb(230, 135, 10);
+        background-position: center;
+        padding-top: 5%;
+    }
+
+    /* panier */
+    .stx-panier {
+        color: rgb(255, 255, 255);
+        border: 2px solid black;
+        background-color: rgb(111, 124, 110);
+        border-radius: 35px;
+        position: fixed;
+        width: 480px;
+    }
+
+    .stx-pan-contenu {
+        max-height: 310px;
+        overflow-x: auto;
+    }
+
+    .stx-htpanier {
+        background-color: rgb(46, 46, 73);
+        border-radius: 33px;
+    }
+
+    /* fin panier */
+    .button-contact {
+        text-align: center;
+        font-size: x-large;
+        padding:15px;
+    }
+
+    .button-message {
+        text-align: center;
+        font-size: 27px;
+        padding-bottom: 4px;
+        margin-top: 0%;
+    }
+
+    /*cards boutique */
+    .stx-cards {
+        color: black;
+        border: 2px solid black;
+        background-color: rgb(136, 131, 55);
+        border-radius: 25px;
+        width:240px;
+
+    }
+
+    .stx-titre-card {
+        height: 40px;
+    }
+
+
+    .stx-cards-cat {
+        height: 140px;
+    }
+    .stx-occaz-cat {
+        height: 60px;
+    }
+    .stx-occaz-marg{
+        margin-top:0;
+        margin-bottom: 20px;
+    }
+
+    .stx-cards img {
+        width: 215px;
+        height: 260px;
+        padding: 10px;
+    }
+
+    .stx-btncards {
+        margin-bottom: 150px;
+        border-radius: 8px;
+    }
+
+    .stx-justify {
+        padding: 20px;
+        text-align: center;
+    }
+.stx-btnform{
+    display: inline-block;
+    margin: 20px 0 0 0;
+}
+.stx-golden{
+    background-image: url(../assets/fond/nuage.png);
+    background-position: center center ;
+    background-size: 500px;
+}
+    
+.commentaire{
+    background-color: rgba(80, 151, 192, 0.384);
+    padding-top: 15px;
+    margin-top: 15px;
+}
+    /*fin cards boutique */
+.stx-flex{
+    display:flex;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.stx-txtw{
+    width:200px;
+    height: 20px;
+}
+
+.stx-marg{
+    margin: 12px;
+}
+
+.stx-margt{margin-top: 10px;
+}
+.stx-envoicmd{
+    border: 2px solid black;
+    background-color: grey;
+    padding:20px 0;
+
+    margin-top:20px;
+}
+.fondu-enter-active,
+    .fondu-leave-active {
+      transition: opacity 1.5s;
+    }
+
+    .fondu-enter,
+    .fondu-leave-to {
+      opacity: 0;
+    }
+
+   footer{
+       margin:0;
+       bottom:0;
+       position:fixed;
+       z-index:0
+   }
+
+   .stx-red{
+       color:red;
+       font-size:25px;
+   }
