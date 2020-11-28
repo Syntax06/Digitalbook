@@ -628,7 +628,7 @@ const goldbook = {
             <div class="commentaire">
                 <h5>Steven</h5>
                 <h6>05/10/2020</h6>
-                <p><i>"Au top !!! j'ai plusieurs de mes Hentai qui avaient les pages collées, j'ai pu les racheter à moindre coup ! "</i></p>  
+                <p><i>"plutôt sympas, un large choix."</i></p>  
             </div>
             <div class="commentaire">
                 <h5>Marou06</h5>
