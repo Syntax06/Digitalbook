@@ -428,6 +428,7 @@ const occaz = {
             <br>
             <div class="button-contact">
             <button v-on:click="ajout()" class="btn btn-warning">ajouter</button>
+            <p class="stx-red">{{verif}}</p>
         </div>
             <br>
          </div>
@@ -456,6 +457,7 @@ const occaz = {
             prix: null,
             isshow: false,
             tel: false,
+            verif: null,
         })
     },
     methods: {
@@ -465,8 +467,23 @@ const occaz = {
         },
 
         ajout() {
-            this.key = this.librairie.length + 1;
-            this.librairie.push({ id: this.key, titre: this.titre, vendeur: this.vendeur, couverture: this.couverture + this.key + this.ext, numtel: this.numtel, prix: this.prix, tel: this.tel })
+            if (!this.titre || !isNaN(this.titre)) { this.verif = "erreur dans le champs nom du livre" }
+            else {
+                if (!this.vendeur || !isNaN(this.vendeur)) { this.verif = "erreur dans le champs vendeur" }
+                else {
+                    if (!this.prix || isNaN(this.prix)) { this.verif = "erreur dans le champs prix " }
+                    else {
+                        if (!this.numtel || isNaN(this.numtel)) { this.verif = "erreur dans le champs telephone" }
+                            else {
+                                this.key = this.librairie.length + 1;
+                                this.librairie.push({ id: this.key, titre: this.titre, vendeur: this.vendeur, couverture: this.couverture + this.key + this.ext, numtel: this.numtel, prix: this.prix, tel: this.tel });
+                                this.verif = null;
+                            }
+                    }
+                }
+            }
+
+
         },
     }
 };
@@ -628,7 +645,7 @@ const goldbook = {
             <div class="commentaire">
                 <h5>Steven</h5>
                 <h6>05/10/2020</h6>
-                <p><i>"plutôt sympas, un large choix."</i></p>  
+                <p><i>"plutôt s&ympas, un large choix."</i></p>  
             </div>
             <div class="commentaire">
                 <h5>Marou06</h5>
